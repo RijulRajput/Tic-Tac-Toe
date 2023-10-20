@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tictactoeNEW.MainPage">
+            
+
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="100" />
+        <RowDefinition Height="100" />
+        <RowDefinition Height="100" />
+        <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+         <RowDefinition Height="100" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="90" />
+          <ColumnDefinition Width="90" />
+              <ColumnDefinition Width="90" />
+             <ColumnDefinition Width="90" />
+    </Grid.ColumnDefinitions>    
+    
+            
+            <Label
+                
+                Text="Winner  is: "
+                SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="20"
+                HorizontalOptions="Start" />
+            <Label
+                Grid.Column="1"
+                x:Name="winnerNameLbl"
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="28"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="StartBtn"
+                Text="Start Game"
+                Clicked="OnStartClicked"
+                HorizontalOptions="Center"
+                BorderColor="DarkMagenta"
+                BorderWidth="5"
+                Grid.Row="6"
+                Grid.Column="2"
+                FontSize="50"
+
+                />
+            <Button
+                Grid.Column="1"
+                x:Name="ABtn"
+                Text=" A "
+                FontSize="60"
+                SemanticProperties.Hint="A clicked"
+                Clicked="OnABtnClicked"
+                Grid.Row="1" />
+            <Button
+                x:Name="BBtn"
+                Text=" B "
+                SemanticProperties.Hint="B clicked"
+                Clicked="OnBBtnClicked"
+                FontSize="60"
+                Grid.Row="1"
+                Grid.Column="2"
+              
+
+               />
+            <Button
+                x:Name="CBtn"
+                Text = " C "
+                SemanticProperties.Hint="C Clicked"
+                Clicked="OnCBtnClicked"
+                FontSize="60"
+                Grid.Row="1"
+                Grid.Column="3"
+                />
+            <Button
+                FontSize="60"
+                x:Name="DBtn"
+                Text=" D "
+                SemanticProperties.Hint="D Clicked"
+                Clicked="OnDBtnClicked"
+                Grid.Column="1"
+                Grid.Row="2"
+                />
+            <Button
+                FontSize="60"
+                x:Name="EBtn"
+                Text=" E "
+                SemanticProperties.Hint="E Clicked"
+                Clicked="OnEBtnClicked"
+                Grid.Column="2"
+                Grid.Row="2"
+                />
+            <Button
+                FontSize="60"
+                x:Name="FBtn"
+                Text=" F "
+                SemanticProperties.Hint="F Clicked"
+                Clicked="OnFBtnClicked"
+                   Grid.Column="3"
+                Grid.Row="2"/>
+            <Button
+                FontSize="60"
+                x:Name="GBtn"
+                Text=" G "
+                SemanticProperties.Hint="G Clicked"
+                Clicked="OnGBtnClicked"
+                Grid.Column="1"
+                Grid.Row="3"
+                />
+
+            <Button
+                FontSize="60"
+                x:Name="HBtn"
+                Text=" H "
+                SemanticProperties.Hint="H Clicked"
+                Clicked="OnHBtnClicked"
+              
+                Grid.Column="2"
+                Grid.Row="3"
+                />
+            <Button
+                FontSize="60"
+                x:Name="IBtn"
+                Text=" I "
+                SemanticProperties.Hint="I Clicked"
+                Clicked="OnIBtnClicked"
+                Grid.Column="3"
+                Grid.Row="3"
+                />
+        
+       
+        
+
+    </Grid>
+
+</ContentPage>
+
